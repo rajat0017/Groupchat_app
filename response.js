@@ -4,9 +4,9 @@ const routes= express.Router();
 
 const path = require('path');
 
-routes.get('/login', (req, res, next) => {
+routes.get('/success', (req, res, next) => {
 
-    res.sendFile(path.join(__dirname,'views','login.html'));
+    res.sendFile(path.join(__dirname,'views','response.html'));
 
 })
 

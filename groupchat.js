@@ -18,4 +18,15 @@ const Chats= require('./chats');
 
 app.use(Chats);
 
+const contact = require('./contact.js');
+app.use(contact);
+
+const response = require('./response.js');
+app.use(response)
+
+const er= require('./404.js');
+app.use(er);
+
+
+
 app.listen(3000);
