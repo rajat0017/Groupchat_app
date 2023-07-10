@@ -1,11 +1,10 @@
 const express = require('express');
 
-const path= require('path');
+
 
 const routes = express.Router();
+const contact_us = require('./controllers/contactus');
 
-routes.get('/contact-us', (req,res,next)=>{
-    res.sendFile(path.join(__dirname,'views','contact.html'))
-})
+routes.get('/contact-us',contact_us.contactus);
 
 module.exports= routes;
